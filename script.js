@@ -44,8 +44,7 @@ function checkGuess() {
             );
             score--;
         } else displayMessage('⛔ Out of range...');
-    } else if (finished) {
-    } else {
+    } else if (score <= 1) {
         score = 0;
         displayMessage('😭 Game over');
         body.style.backgroundColor = 'FireBrick';
